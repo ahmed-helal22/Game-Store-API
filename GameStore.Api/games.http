@@ -1,0 +1,26 @@
+GET  http://localhost:5035/games
+###
+GET  http://localhost:5035/games/7
+###
+POST  http://localhost:5035/games
+content-type: application/json
+
+{
+    "name" : " ",
+    "genre" : "Action-adventure",
+    "price" : 59.99,
+    "releaseDate" : "2017-08-21"
+}
+###
+PUT  http://localhost:5035/games/1
+Content-Type: application/json
+
+{
+
+    "name":"the legend of Ahmed Helal",
+    "genre":"not for all",
+    "price": 59.99,
+    "releaseDate":"2026-11-20"
+}
+###
+DELETE http://localhost:5035/games/2 
